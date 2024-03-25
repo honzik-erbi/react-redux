@@ -3,6 +3,7 @@ import Mainpage from "../MainPage/MainPage";
 import Navbar from "../../components/Navbar/Navbar";
 import PizzaOrder from "../PizzaOrder/PizzaOrder";
 import Cart from "../../components/Cart/Cart";
+import PcOrder from "../PcOrder/PcOrder";
 
 export default function AppRoutes() {
   return (
@@ -12,6 +13,7 @@ export default function AppRoutes() {
       <Routes>
         <Route path="/" element={<Mainpage/>} />
         <Route path="/pizzaorder" element={<PizzaOrder/>} />
+        <Route path="/pcorder" element={<PcOrder/>} />
       </Routes>
       <Cart />
     </HashRouter>

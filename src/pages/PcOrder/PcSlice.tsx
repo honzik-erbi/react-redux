@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export const pizzaSlice = createSlice({
-    name:"pizza",
+export const pcSlice = createSlice({
+    name:"pc",
     initialState: {
         orders: {},
         counter: 0
@@ -20,15 +20,13 @@ export const pizzaSlice = createSlice({
     }
 });
 
-export const { add, remove } = pizzaSlice.actions;
+export const { add, remove } = pcSlice.actions;
 
-export default pizzaSlice.reducer;
+export default pcSlice.reducer;
 
-export type PizzaState = {
-    pizza: {
+export type PcState = {
+    pc: {
         orders: { [id: number]: string }
         counter: number
     }
 }
-
-
