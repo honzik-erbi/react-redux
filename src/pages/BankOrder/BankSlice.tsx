@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export const pcSlice = createSlice({
-    name:"pc",
+export const bankSlice = createSlice({
+    name:"bank",
     initialState: {
         orders: {},
         counter: 0
@@ -20,12 +20,12 @@ export const pcSlice = createSlice({
     }
 });
 
-export const { add, remove } = pcSlice.actions;
+export const { add, remove } = bankSlice.actions;
 
-export default pcSlice.reducer;
+export default bankSlice.reducer;
 
-export type PcState = {
-    pc: {
+export type PizzaState = {
+    bank: {
         orders: { [id: number]: string }
         counter: number
     }

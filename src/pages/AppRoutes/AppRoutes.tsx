@@ -1,21 +1,24 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Mainpage from "../MainPage/MainPage";
-import Navbar from "../../components/Navbar/Navbar";
-import PizzaOrder from "../PizzaOrder/PizzaOrder";
-import Cart from "../../components/Cart/Cart";
-import PcOrder from "../PcOrder/PcOrder";
+import Header from "../../components/Navbar/Header";
+import Navbar1 from "../../components/Navbar/Navbar1";
+import Vybrat from "../Vybrat/Vybrat";
+import Vlozit from "../Vlozit/Vlozit";
+import Zustatek from "../Zustatek/Zustatek";
+
 
 export default function AppRoutes() {
   return (
     <>
     <HashRouter>
-      <Navbar />
+      <Header />
       <Routes>
         <Route path="/" element={<Mainpage/>} />
-        <Route path="/pizzaorder" element={<PizzaOrder/>} />
-        <Route path="/pcorder" element={<PcOrder/>} />
+        <Route path="/vybrat" element={<Vybrat/>} />
+        <Route path="/vybrat" element={<Vlozit/>} />
+        <Route path="/zustatek" element={<Zustatek/>} />
+        <Route path="/navbar" element={<Navbar1/>} />
       </Routes>
-      <Cart />
     </HashRouter>
     </>
   );
